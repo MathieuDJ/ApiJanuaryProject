@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI
 import random
 from pydantic import BaseModel
 
@@ -186,3 +186,11 @@ async def verwijder_auto(merk: str):
     auto_lijst.clear()
     auto_lijst.extend(nieuwe_lijst)
     return {"message": f"Auto's met merk {merk} verwijderd"}
+
+@app.put("/auto/{merk}/{model}")
+async def update_auto(merk: str, model: str, auto: Auto):
+    for a in auto_lijst:
+        if a["merk"] == merk and a["model"] == model:
+            a["horsepower"] = auto.horsepower
+            return {"status": "success"}
+    return {"status": "not found"}
