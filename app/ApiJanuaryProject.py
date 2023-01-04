@@ -179,3 +179,10 @@ async def geef_auto_horsepower(min_horsepower: int, max_horsepower: int):
 async def voeg_auto_toe(auto: Auto):
     auto_lijst.append(auto.dict())
     return {"message": "Auto toegevoegd aan lijst"}
+
+@app.delete("/auto/{merk}")
+async def verwijder_auto(merk: str):
+    nieuwe_lijst = [auto for auto in auto_lijst if auto["merk"] != merk]
+    auto_lijst.clear()
+    auto_lijst.extend(nieuwe_lijst)
+    return {"message": f"Auto's met merk {merk} verwijderd"}
