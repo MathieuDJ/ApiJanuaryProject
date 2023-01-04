@@ -10,6 +10,9 @@ class Auto(BaseModel):
     horsepower: int
     kleur: str
 
+class Horsepower(BaseModel):
+    horsepower: int
+
 auto_lijst = [
   {
     "merk": "Mercedes-Benz",
@@ -188,7 +191,7 @@ async def verwijder_auto(merk: str):
     return {"message": f"Auto's met merk {merk} verwijderd"}
 
 @app.put("/auto/{merk}/{model}")
-async def update_auto(merk: str, model: str, auto: Auto):
+async def update_auto(merk: str, model: str, auto: Horsepower):
     for a in auto_lijst:
         if a["merk"] == merk and a["model"] == model:
             a["horsepower"] = auto.horsepower
