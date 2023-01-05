@@ -1,9 +1,28 @@
 from fastapi import FastAPI
 import random
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
 
+origins = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://localhost:63342",
+    "http://127.0.0.1:63342",
+    "https://randomizer-service-mathieudj.cloud.okteto.net",
+    "https://randomizer-service-mathieudj.cloud.okteto.net/auto/",
+    "https://randomizer-service-mathieudj.cloud.okteto.net/auto"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 class Auto(BaseModel):
     merk: str
     model: str
@@ -156,18 +175,6 @@ async def geef_auto_kleur(kleur: str):
     for auto in auto_lijst:
         if auto["kleur"] == kleur:
             result.append(auto)
-    return result
-
-@app.get("/auto/{aantal}/{kleur}")
-async def geef_auto(aantal: int, kleur: str):
-    aantal_autos = 0
-    result = []
-    for auto in auto_lijst:
-        if auto['kleur'] == kleur:
-            result.append(auto)
-            aantal_autos += 1
-            if aantal_autos >= aantal:
-                break
     return result
 
 @app.get("/auto/horsepower/{min_horsepower}/{max_horsepower}")
