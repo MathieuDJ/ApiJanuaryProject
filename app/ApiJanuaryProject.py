@@ -6,13 +6,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-@app.middleware("http")
-async def add_cors_headers(request: Request, call_next):
-    response = await call_next(request)
-    response.headers['Access-Control-Allow-Origin'] = 'https://sage-cannoli-35a40c.netlify.app'
-    return response
-
-
 origins = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
