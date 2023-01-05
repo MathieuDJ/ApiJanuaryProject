@@ -10,7 +10,7 @@
             cars: null,
             numberOfCars: 10,
             async getCars() {
-                this.cars = await (await fetch(`https://randomizer-service-mathieudj.cloud.okteto.net/auto/${this.numberOfCars}`)).json();
+                this.cars = await (await fetch(`https://randomizer-service-mathieudj.cloud.okteto.net/auto/${this.numberOfCars}`, {mode: 'no-cors'})).json();
             }
         }" x-init="getCars">
         <div id="layout">
