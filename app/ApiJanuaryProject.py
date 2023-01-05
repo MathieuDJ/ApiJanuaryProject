@@ -15,7 +15,7 @@ origins = [
     "https://randomizer-service-mathieudj.cloud.okteto.net/auto/",
     "https://randomizer-service-mathieudj.cloud.okteto.net/auto",
     "https://sage-cannoli-35a40c.netlify.app/",
-    "https://sage-cannoli-35a40c.netlify.app"
+    "http://sage-cannoli-35a40c.netlify.app/"
 ]
 
 app.add_middleware(
