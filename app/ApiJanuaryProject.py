@@ -13,8 +13,7 @@ origins = [
     "http://127.0.0.1:63342",
     "https://randomizer-service-mathieudj.cloud.okteto.net",
     "https://randomizer-service-mathieudj.cloud.okteto.net/auto/",
-    "https://randomizer-service-mathieudj.cloud.okteto.net/auto",
-    "https://heroic-beignet-9a70e8.netlify.app/"
+    "https://randomizer-service-mathieudj.cloud.okteto.net/auto"
 ]
 
 app.add_middleware(
