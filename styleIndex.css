@@ -1,0 +1,39 @@
+body {
+    background-color: #e5f5fd;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #0e4465;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0e4465;
+    border: 2px solid #0e4465;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #0e4465;
+    color: white;
+}
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:x-on="http://www.w3.org/1999/xhtml">
+<head>
+    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+    <title>API Mathieu Auto's</title>
+    <link rel="stylesheet" href="styleAddCar.css">
+</head>
+<body>
+    <div x-data="{
+            form: {
+                merk: '',
+                model: '',
+                horsepower: '',
+                kleur: ''
+            },
+            message: '',
+            async addCar() {
+                const response = await fetch('https://randomizer-service-mathieudj.cloud.okteto.net/auto/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(this.form)
+                });
+                const data = await response.json();
+                this.message = data['message'];
+            }
+        }">
+        <form x-on:submit.prevent="addCar">
+            <label for="merk">Merk:</label><br>
+            <input type="text" id="merk" x-model="form.merk"><br>
+            <label for="model">Model:</label><br>
+            <input type="text" id="model" x-model="form.model"><br>
+            <label for="horsepower">Horsepower:</label><br>
+            <input type="number" id="horsepower" x-model="form.horsepower"><br>
+            <label for="kleur">Kleur:</label><br>
+            <input type="text" id="kleur" x-model="form.kleur"><br>
+            <input type="submit" value="Toevoegen">
+        </form>
+        <p x-text="message"></p>
+    </div>
+</body>
+</html>

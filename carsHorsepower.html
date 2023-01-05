@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:x-on="http://www.w3.org/1999/xhtml">
+<head>
+    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="styleHorsepower.css">
+    <title>API Mathieu Auto's</title>
+</head>
+<body>
+    <div x-data="{
+            cars: null,
+            minHorsepower: 0,
+            maxHorsepower: 0,
+            async getCars() {
+                this.cars = await (await fetch(`https://randomizer-service-mathieudj.cloud.okteto.net/auto/horsepower/${this.minHorsepower}/${this.maxHorsepower}`)).json();
+            }
+        }" x-init="getCars">
+        <div class="layout"><label for="minHorsepower">Minimum horsepower:</label>
+        <input type="number" id="minHorsepower" name="minHorsepower" x-model="minHorsepower" x-on:input="getCars"></div>
+        <br>
+        <div class="layout"><label for="maxHorsepower">Maximum horsepower:</label>
+        <input type="number" id="maxHorsepower" name="maxHorsepower" x-model="maxHorsepower" x-on:input="getCars"></div>
+        <br>
+        <ul>
+            <template x-for="car in cars">
+                <li>
+                    <p>Make: <strong x-text="car.merk">Placeholder Make</strong></p>
+                    <p>Model: <strong x-text="car.model">Placeholder Model</strong></p>
+                    <p>Horsepower: <strong x-text="car.horsepower">Placeholder Horsepower</strong></p>
+                    <p>Color: <strong x-text="car.kleur">Placeholder Color</strong></p>
+                </li>
+            </template>
+        </ul>
+    </div>
+</body>
+</html>
