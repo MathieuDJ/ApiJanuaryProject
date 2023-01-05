@@ -14,7 +14,7 @@ origins = [
     "https://randomizer-service-mathieudj.cloud.okteto.net",
     "https://randomizer-service-mathieudj.cloud.okteto.net/auto/",
     "https://randomizer-service-mathieudj.cloud.okteto.net/auto",
-    "https://transcendent-syrniki-fe2fcd.netlify.app/",
+    "https://transcendent-syrniki-fe2fcd.netlify.app",
     "https://mathieu2002.github.io/",
     "https://mathieu2002.github.io",
     "https://mathieu2002.github.io."
