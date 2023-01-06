@@ -11,7 +11,7 @@
             minHorsepower: 0,
             maxHorsepower: 0,
             async getCars() {
-                this.cars = await (await fetch(`https://apijanuaryproject-mathieudj.cloud.okteto.net/auto/horsepower/${this.minHorsepower}/${this.maxHorsepower}`)).json();
+                this.cars = await (await fetch(`https://system-service-mathieudj.cloud.okteto.net/auto/horsepower/${this.minHorsepower}/${this.maxHorsepower}`)).json();
             }
         }" x-init="getCars">
         <div class="layout"><label for="minHorsepower">Minimum horsepower:</label>
