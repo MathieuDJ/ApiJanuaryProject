@@ -10,7 +10,7 @@
             cars: null,
             color: '',
             async getCars() {
-                this.cars = await (await fetch(`https://apijanuaryproject-mathieudj.cloud.okteto.net/auto/kleur/${this.color}`)).json();
+                this.cars = await (await fetch(`https://system-service-mathieudj.cloud.okteto.net/auto/kleur/${this.color}`)).json();
             }
         }" x-init="getCars">
         <form x-on:submit.prevent="getCars">
