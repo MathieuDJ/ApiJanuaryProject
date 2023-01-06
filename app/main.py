@@ -10,6 +10,9 @@ import schemas
 from database import SessionLocal, engine
 import os
 
+import sys
+sys.path.append('/app/crud.py')
+
 if not os.path.exists('.\sqlitedb'):
     os.makedirs('.\sqlitedb')
 
