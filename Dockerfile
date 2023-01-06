@@ -8,4 +8,4 @@ RUN mkdir -p /code/sqlitedb
 RUN pip install "passlib[bcrypt,argon2]"
 RUN pip install python-multipart
 RUN pip install argon2_cffi
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
