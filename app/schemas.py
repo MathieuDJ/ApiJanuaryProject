@@ -10,7 +10,6 @@ class UserCreate(UserBase):
 
 class User(UserBase):
     id: int
-    items: list[Car] = []
 
     class Config:
         orm_mode = True
