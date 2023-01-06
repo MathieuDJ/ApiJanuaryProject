@@ -1,4 +1,4 @@
-FROM python:3.10.0-alpine
+FROM python:3.10.0-slim
 RUN pip install passlib
 RUN pip install argon2_cffi
 RUN pip install bcrypt
