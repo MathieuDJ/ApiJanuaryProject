@@ -1,6 +1,6 @@
 version: "3.9"
 services:
- randomizer-service:
+ apijanuaryproject:
   image: mathieudju/apijanuaryproject
   ports:
     - "8000:8000"
