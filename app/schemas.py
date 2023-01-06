@@ -1,24 +1,5 @@
 from pydantic import BaseModel
 
-
-class CarBase(BaseModel):
-    model: str
-    color: str
-    horsepower: int
-
-
-class CarCreate(CarBase):
-    pass
-
-
-class Car(CarBase):
-    id: int
-    make: str
-
-    class Config:
-        orm_mode = True
-
-
 class UserBase(BaseModel):
     email: str
 
