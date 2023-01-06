@@ -4,14 +4,12 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
-import crud
-import models
+import app.crud
+import app.models
 import schemas
 from database import SessionLocal, engine
 import os
 
-import sys
-sys.path.append('/app/crud.py')
 
 if not os.path.exists('.\sqlitedb'):
     os.makedirs('.\sqlitedb')
