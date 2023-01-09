@@ -50,5 +50,5 @@
   ![GET](https://user-images.githubusercontent.com/72858870/211361856-fa3f5df6-b564-4d79-856f-cb6efa718b91.png)
   * ### GET users
   ![GET](https://user-images.githubusercontent.com/72858870/211361970-fabe6d83-1eb5-4cc4-80d0-d62830b1d67b.png)
-  * ### POST user door een ID
+  * ### GET user door een ID
   ![GET](https://user-images.githubusercontent.com/72858870/211362051-e8f64c3f-06ca-461d-8bc2-84018bbd8abd.png)
