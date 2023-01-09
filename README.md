@@ -33,7 +33,7 @@
 ![Image api docs](https://user-images.githubusercontent.com/72858870/211358282-d19f247c-a3f2-46f9-a841-e89819f684a0.png)
 * ### Postman screenshots
   * #### GET X aantal auto's
-  ![GET](![image](https://user-images.githubusercontent.com/72858870/211359116-4fc0b9fa-6d94-477b-9479-fd46e75b9d21.png))
+  ![GET](https://user-images.githubusercontent.com/72858870/211359116-4fc0b9fa-6d94-477b-9479-fd46e75b9d21.png)
   * #### P
   ![GET]()
   * #### P
