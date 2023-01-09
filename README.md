@@ -52,3 +52,6 @@
   ![GET](https://user-images.githubusercontent.com/72858870/211361970-fabe6d83-1eb5-4cc4-80d0-d62830b1d67b.png)
   * ### GET user door een ID
   ![GET](https://user-images.githubusercontent.com/72858870/211362051-e8f64c3f-06ca-461d-8bc2-84018bbd8abd.png)
+* ### Pytest Screenshot
+  * #### All tests
+  ![PYTEST](https://user-images.githubusercontent.com/72858870/211362632-aaa60d63-e5b5-4399-9e59-9be6c700bafb.png)
