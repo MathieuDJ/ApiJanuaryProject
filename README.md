@@ -28,3 +28,15 @@
     * [repo](https://github.com/MathieuDJ/ApiJanuaryProject.git)
   * #### link hosted front-end Netlify
     * [netlify front-end](https://transcendent-syrniki-fe2fcd.netlify.app)
+
+* ### Screenshot OpenAPI-docs
+![Image api docs]()
+* ### Postman screenshots
+  * #### P
+  ![Spotify get]()
+  * #### P
+  ![Spotify post]()
+  * #### P
+  ![Playlist get]()
+  * ### P
+  ![Playlist get]()
