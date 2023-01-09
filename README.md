@@ -15,11 +15,11 @@
   > 
   > Als laatste is er nog 1 POST request voor de token. <br />
 * ### uitbreiding
-  >Test alle GET endpoints van een van je APIs via de Requests en pytest library (+10%) <br />
-  >Test alle niet-GET endpoint (+10%) <br />
-  >Maak een front-end voor je applicatie die al je GET endpoints en POST endpoints bevat (+15%) <br />
-  >Host de front-end op netlify (+10%) <br />
-  >Geef de front-end een leuke stijlgeving (+10%) <br />
+  >2.1 Test alle GET endpoints van een van je APIs via de Requests en pytest library (+10%) <br />
+  >2.1.1 Test alle niet-GET endpoint (+10%) <br />
+  >3.1 Maak een front-end voor je applicatie die al je GET endpoints en POST endpoints bevat (+15%) <br />
+  >3.1.1 Host de front-end op netlify (+10%) <br />
+  >3.1.2 Geef de front-end een leuke stijlgeving (+10%) <br />
  
 * ### links
   * #### hosted API op Oketo
