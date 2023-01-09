@@ -34,9 +34,21 @@
 * ### Postman screenshots
   * #### GET X aantal auto's
   ![GET](https://user-images.githubusercontent.com/72858870/211359116-4fc0b9fa-6d94-477b-9479-fd46e75b9d21.png)
-  * #### P
-  ![GET]()
-  * #### P
-  ![GET]()
-  * ### P
-  ![GET]()
+  * #### GET zonder X aantal auto's geeft er altijd 5 terug
+  ![GET](https://user-images.githubusercontent.com/72858870/211359354-544b013e-ef8f-4f38-8edc-6ccf6ec92f24.png)
+  * #### GET auto met bepaalde kleur
+  ![GET](https://user-images.githubusercontent.com/72858870/211359566-0a604fe3-4c7b-4e43-b6aa-0c21051634ac.png)
+  * ### GET auto met min X en max X horsepower
+  ![GET](https://user-images.githubusercontent.com/72858870/211359693-5ee0e6d6-91b3-4711-bc01-c00cfe9dc98d.png)
+  * ### POST een auto
+  ![GET](https://user-images.githubusercontent.com/72858870/211359939-2cb88b82-fa0e-4da4-8d0e-118cf9938c95.png)
+  * ### DELETE een auto met een bepaald merk
+  ![GET](https://user-images.githubusercontent.com/72858870/211360173-ed68ab9e-b7ea-44ca-885d-0ce2250e6634.png)
+  * ### PUT update een auto zijn horsepower
+  ![GET](https://user-images.githubusercontent.com/72858870/211361595-6a591105-0c12-4da2-9075-f00d2bf9e11b.png)
+  * ### POST een user
+  ![GET](https://user-images.githubusercontent.com/72858870/211361856-fa3f5df6-b564-4d79-856f-cb6efa718b91.png)
+  * ### GET users
+  ![GET](https://user-images.githubusercontent.com/72858870/211361970-fabe6d83-1eb5-4cc4-80d0-d62830b1d67b.png)
+  * ### POST user door een ID
+  ![GET](https://user-images.githubusercontent.com/72858870/211362051-e8f64c3f-06ca-461d-8bc2-84018bbd8abd.png)
