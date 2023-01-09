@@ -30,8 +30,7 @@
     * [netlify front-end](https://transcendent-syrniki-fe2fcd.netlify.app)
 
 * ### Screenshot OpenAPI-docs
-![Image api docs](![screencapture-system-service-mathieudj-cloud-okteto-net-docs-2023-01-09-17_29_39](https://user-images.githubusercontent.com/72858870/211358282-d19f247c-a3f2-46f9-a841-e89819f684a0.png)
-)
+![Image api docs](https://user-images.githubusercontent.com/72858870/211358282-d19f247c-a3f2-46f9-a841-e89819f684a0.png)
 * ### Postman screenshots
   * #### P
   ![Spotify get]()
