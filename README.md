@@ -21,3 +21,10 @@
   >Host de front-end op netlify (+10%) <br />
   >Geef de front-end een leuke stijlgeving (+10%) <br />
  
+* ### links
+  * #### hosted API op Oketo
+    * [Oketo endpoint](https://system-service-mathieudj.cloud.okteto.net)
+  * #### GitHub repo
+    * [repo](https://github.com/MathieuDJ/ApiJanuaryProject.git)
+  * #### link hosted front-end Netlify
+    * [netlify front-end](https://transcendent-syrniki-fe2fcd.netlify.app)
